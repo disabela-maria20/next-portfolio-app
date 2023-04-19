@@ -2,26 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  h1 {
+      @apply font-sans  text-38 sm:text-45 md:text-55
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  h2 {
+      @apply font-sans font-semibold text-31 sm:text-38 md:text-45
+  }
+
+  h3 { 
+      @apply font-sans font-semibold text-26 sm:text-31 
+  }
+
+  p, span, label {
+      @apply font-serif text-15 sm:text-18
+  }
+
+  img {
+      @apply max-w-full h-auto;
+  }
+  a{
+      @apply text-15
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .line {
+      @apply w-full bg-white h-2 opacity-50 rounded relative transition transform;
+  }
+  .line.active:nth-child(1){
+      @apply opacity-100 transition transform ease-in rotate-45 duration-300 top-4/3 delay-150
+  }
+  .line.active:nth-child(2){
+      @apply hidden transition ease-in duration-300
+  }
+  .line.active:nth-child(3){
+      @apply  h-2 opacity-100 transition transform ease-in duration-300 -rotate-45 -top-4/3	delay-150
+  }
+  .nav{
+      @apply flex bg-black items-center flex-col md:flex-row transition transform ease-in w-full
+  }
+  .link-outline-black{
+      @apply relative  font-sans font-bold inline-block capitalize text-18 
+      after:content-[""] after:mt-0 after:absolute after:bottom-0 after:bg-yellow after:w-full after:h-2 after:right-0 after:z-40
+  }
+  .icon-dev{
+      @apply w-[100px] h-[100px] m-auto !important
+  }
+}
+@layer utilities {
+  .animateSquare{
+      animation: animate 5s linear infinite;
+  }
+  @keyframes animate{
+      0%{
+          transform: scale(0) translateY(0) rotate(0deg); opacity: 0;
+      }
+      10%{
+          opacity: 1;
+      }
+      100%{
+          transform: scale(1) translateY(700%) rotate(360deg);
+      }
+  }
+  .square{
+    height: 100vh;
+    background-position-y: 90vh;
+    background-position-x: unset;
+  }
+  .block-project{
+    background: black;
+    transition: 0.3s;
+    
+  }
+  .block-project:hover{
+    transform: scale(1.2);
+    position: relative;
+    z-index: 999;
+  }
+ 
+  .block-project-img{
+    opacity: 0.4;
+  }
+  
 }
