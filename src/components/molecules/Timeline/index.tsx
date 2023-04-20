@@ -20,13 +20,13 @@ const Timeline = () => {
         </div>
         <div className="relative flex-1 mb-26 rounded shadow lg:mb-55 p-22">
           <div className="relative z-20">
-            <div className="text-13 capitalize font-medium">{data.duration}
-              <span className='text-13 capitalize  md:hidden font-medium ml-6'>| {data.company}</span>
+            <div className="text-13 capitalize font-serif font-medium">{data.duration}
+              <span className='text-13 font-serif capitalize  md:hidden font-medium ml-6'>| {data.company}</span>
             </div>
-            <h3 className="text-22 sm:text-26 mb-13">{data.jobTitle}</h3>
+            <h3 className="text-22  sm:text-26 mb-13">{data.jobTitle}</h3>
             {data.responsibilities.map((data) => (
               <ul key={data} className='list-disc ml-18 mb-10'>
-                <li className='text-[16px] sm:text-15'>{data}</li>
+                <li className='text-15 sm:text-18 leading-paragraph'>{data}</li>
               </ul>
             ))}
           </div>

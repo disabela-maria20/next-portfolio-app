@@ -7,9 +7,9 @@ const THome = (): JSX.Element => {
   return <>
     <Header />
     <main>
+      <Projects />
       <About />
       <Experience />
-      <Projects />
       <Skills />
     </main>
     <Footer />

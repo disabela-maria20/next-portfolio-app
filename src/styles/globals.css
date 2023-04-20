@@ -15,7 +15,7 @@
       @apply font-sans font-semibold text-26 sm:text-31 
   }
 
-  p, span, label {
+  p, label {
       @apply font-serif text-15 sm:text-18
   }
 
@@ -29,28 +29,37 @@
 
 @layer components {
   .line {
-      @apply w-full bg-white h-2 opacity-50 rounded relative transition transform;
+    @apply w-full bg-white h-2 opacity-50 rounded relative transition transform;
   }
   .line.active:nth-child(1){
-      @apply opacity-100 transition transform ease-in rotate-45 duration-300 top-4/3 delay-150
+    @apply opacity-100 transition transform ease-in rotate-45 duration-300 top-4/3 delay-150
   }
   .line.active:nth-child(2){
-      @apply hidden transition ease-in duration-300
+    @apply hidden transition ease-in duration-300
   }
   .line.active:nth-child(3){
-      @apply  h-2 opacity-100 transition transform ease-in duration-300 -rotate-45 -top-4/3	delay-150
+     @apply  h-2 opacity-100 transition transform ease-in duration-300 -rotate-45 -top-4/3	delay-150
   }
   .nav{
-      @apply flex bg-black items-center flex-col md:flex-row transition transform ease-in w-full
+    @apply flex bg-black items-center flex-col md:flex-row transition transform ease-in w-full
   }
   .link-outline-black{
-      @apply relative  font-sans font-bold inline-block capitalize text-18 
+    @apply relative  font-sans font-bold inline-block capitalize text-18 
       after:content-[""] after:mt-0 after:absolute after:bottom-0 after:bg-yellow after:w-full after:h-2 after:right-0 after:z-40
   }
   .icon-dev{
-      @apply w-[100px] h-[100px] m-auto !important
+     @apply w-[100px] h-[100px] m-auto !important
   }
-}
+  .input-subject{
+    @apply bg-gray-800 py-4 text-gray-200 border-none w-full h-45 rounded-sm px-13 font-sans text-15 sm:text-18
+  }
+  .input-subject-textarea{
+    @apply bg-gray-800 py-4 text-gray-200 border-none w-full h-[140px]  rounded-sm px-13 font-sans text-15 sm:text-18
+  }
+  .btn-contacts{
+    @apply bg-yellow w-full h-45 rounded-sm font-sans uppercase transition-opacity hover:opacity-80
+  }
+} 
 @layer utilities {
   .animateSquare{
       animation: animate 5s linear infinite;

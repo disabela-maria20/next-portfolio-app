@@ -1,4 +1,4 @@
-export interface IBottonProps {
-  children: React.ReactNode
-  styleType: 'btn-outline-black' | ''
+
+export interface IBottonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  styleType?: 'btn-contacts';
 }

@@ -1,6 +1,8 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Libre_Baskerville, Poppins } from '@next/font/google'
+import { QueryClientProvider } from '@tanstack/react-query'
+import { queryClient } from '../../utils/serverces/QueryClient'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -16,8 +18,11 @@ const libre = Libre_Baskerville({
   style: ['normal', 'italic']
 })
 export default function App({ Component, pageProps }: AppProps) {
-  return <div className={`${poppins.variable} ${libre.variable}`}>
-    <Component {...pageProps} />
-  </div>
+  return (
+    <QueryClientProvider client={queryClient}>
+      <div className={`${poppins.variable} ${libre.variable}`}>
+        <Component {...pageProps} />
+      </div>
+    </QueryClientProvider >)
 
 }

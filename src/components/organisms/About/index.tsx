@@ -14,8 +14,8 @@ const About = (): JSX.Element => {
         </article>
         <article className='md:col-span-2'>
           <h3 className='mb-18'>Isabela M. Ribeiro</h3>
-          <p className='mb-15'>Eu sou uma profissional formada em Análise e Desenvolvimento de Sistemas com dois anos de experiência na área de desenvolvimento de front-end. Meu interesse pela área surgiu durante o curso técnico em informática, e desde então, tenho me dedicado a me tornar uma referência na área.</p>
-          <p className='mb-18'>Ao longo da minha trajetória, eu trabalhei com diversas tecnologias de desenvolvimento, mas minha especialidade é na programação reativa do React.js & Next.js. Sempre priorizando a performance e utilizando conceitos como SOLID, Mobile First, Atomic Design, já participei de entregas de produtos de alta qualidade no mercado, como Experimentador e Brandlovrs.</p>
+          <p className='mb-15 leading-paragraph'>Eu sou uma profissional formada em Análise e Desenvolvimento de Sistemas com dois anos de experiência na área de desenvolvimento de front-end. Meu interesse pela área surgiu durante o curso técnico em informática, e desde então, tenho me dedicado a me tornar uma referência na área.</p>
+          <p className='mb-18 leading-paragraph'>Ao longo da minha trajetória, eu trabalhei com diversas tecnologias de desenvolvimento, mas minha especialidade é na programação reativa do React.js & Next.js. Sempre priorizando a performance e utilizando conceitos como SOLID, Mobile First, Atomic Design, já participei de entregas de produtos de alta qualidade no mercado, como Experimentador e Brandlovrs.</p>
           <div className='flex items-center justify-between mt-15'>
             <div className='grid grid-cols-3 items-center'>
               <a href='https://www.linkedin.com/in/isabela-maria-ribeiro/' target='_blank' className='mr-8'>
