@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaBriefcase } from 'react-icons/fa'
-import job from '../../../../utils/api/json/ServerJobs.json'
+import job from '../../../../utils/json/ServerJobs.json'
 import { ITimelineProps } from './type'
 
 const Timeline = () => {
