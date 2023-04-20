@@ -1,4 +1,4 @@
-import projects from '../../../utils/api/json/ServerProjescts.json'
+import projects from '../../../../utils/api/json/ServerProjescts.json'
 import { NextResponse } from 'next/server';
 
 export async function GET() {

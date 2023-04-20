@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { Title } from '../../atoms'
 import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"
