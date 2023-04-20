@@ -1,6 +1,5 @@
-export type ContactForm = {
-  name: string
-  email: string,
-  subject: string
-  message: string
-}
+import { z } from "zod"
+import { contactFormSchema } from "./Contact.schema"
+
+
+export type ContactForm = z.infer<typeof contactFormSchema>

@@ -12,7 +12,7 @@
   }
 
   h3 { 
-      @apply font-sans font-semibold text-26 sm:text-31 
+      @apply font-sans font-semibold text-26 sm:text-31
   }
 
   p, label {
@@ -59,10 +59,13 @@
   .btn-contacts{
     @apply bg-yellow w-full h-45 rounded-sm font-sans uppercase transition-opacity hover:opacity-80
   }
+  .text-error {
+    @apply  text-red-500 font-serif border-none;
+  }
 } 
 @layer utilities {
   .animateSquare{
-      animation: animate 5s linear infinite;
+    animation: animate 5s linear infinite;
   }
   @keyframes animate{
       0%{
@@ -85,12 +88,14 @@
     transition: 0.3s;
     
   }
-  .block-project:hover{
+  @media(min-width:768px){
+    .block-project:hover{
     transform: scale(1.2);
     position: relative;
     z-index: 999;
   }
- 
+  }
+  
   .block-project-img{
     opacity: 0.4;
   }

@@ -1,0 +1,7 @@
+{
+  "tabWidth":2,
+  "endOfLine":"crlf", 
+  "bracketSpacing": true,
+  "semi": false,
+  "jsxBracketSameLine": true
+}

@@ -26,7 +26,7 @@ const About = (): JSX.Element => {
                 <FaLinkedin className='text-gray-900 text-22 hover:text-yellow transition-colors' />
                 <span className='hidden'>linkedin</span>
               </a>
-              <a href='mailto:isabela10014@hotmail.com' target='_blank' className='mr-8'>
+              <a href='mailto:dev@isabelamribeiro.com.br' target='_blank' className='mr-8'>
                 <FaEnvelope className='text-gray-900 text-22 hover:text-yellow transition-colors' />
                 <span className='hidden'>e-mail</span>
               </a>
