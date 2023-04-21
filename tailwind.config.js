@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require("tailwindcss/defaultTheme")
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -16,8 +16,8 @@ module.exports = {
       xxl: '1440px'
     },
     fontFamily: {
-      'serif': ['var(--libre)', 'Courier New'],
-      'sans': ['var(--poppins)', 'sans-serif']
+      'serif': ['var(--libre)', ...fontFamily.serif],
+      'sans': ['var(--poppins)', ...fontFamily.sans]
     },
     colors: {
       white: '#fff',

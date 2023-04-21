@@ -2,22 +2,10 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Title } from '../../atoms'
-import { IProjectProps } from './type'
-import { useQuery } from '@tanstack/react-query'
-
-const getProject = async (): Promise<IProjectProps[]> => {
-  const response = await fetch(`${process.env.API_URL}/projescts`)
-  const data = await response.json()
-  return data
-}
+import projescts from '../../../../utils/json/projescts.json'
 
 const Projects: React.FC = (): JSX.Element => {
   const [select, setSelect] = useState<string>('professional')
-
-  const { data, isLoading } = useQuery<IProjectProps[]>({
-    queryKey: ['todos'],
-    queryFn: getProject
-  })
 
   return (
     <>
@@ -34,48 +22,41 @@ const Projects: React.FC = (): JSX.Element => {
           </select>
         </div>
         <article className="grid grid-cols-1 grid-rows-6 md:grid-rows-none sm:grid-cols-2 lg:grid-cols-3 gap-26 md:gap-26 ">
-          {isLoading ? (
-            <p>Carregando...</p>
-          ) : (
-            <>
-              {data &&
-                data
-                  .filter((e) => e.type === select)
-                  .map((data) => (
-                    <div key={data.id} className="relative z-20 block-project">
-                      <Link
-                        href={`${data.link}`}
-                        passHref
-                        legacyBehavior
-                        rel="noreferrer nofollow noopener"
-                        target="_SEJ"
-                      >
-                        <>
-                          <img
-                            src={data.img}
-                            alt={`Projeto ${data.name}`}
-                            width="auto"
-                            height="auto"
-                            className="block-project-img relative -z-10 h-full object-cover"
-                          />
-                          <div className="absolute top-0 h-full w-full flex justify-center flex-col items-center">
-                            <h3 className="text-white font-serif font-semibold text-15 lg:text-18">
-                              {data.name}
-                            </h3>
-                            <img
-                              src={data.technology.icon}
-                              alt={`Projeto ${data.technology.name}`}
-                              width="auto"
-                              height="auto"
-                              className="relative -z-10 object-cover w-22"
-                            />
-                          </div>
-                        </>
-                      </Link>
+          {projescts
+            .filter((e) => e.type === select)
+            .map((data) => (
+              <div key={data.id} className="relative z-20 block-project">
+                <Link
+                  href={`${data.link}`}
+                  passHref
+                  legacyBehavior
+                  rel="noreferrer nofollow noopener"
+                  target="_SEJ"
+                >
+                  <>
+                    <img
+                      src={data.img}
+                      alt={`Projeto ${data.name}`}
+                      width="auto"
+                      height="auto"
+                      className="block-project-img relative -z-10 h-full object-cover"
+                    />
+                    <div className="absolute top-0 h-full w-full flex justify-center flex-col items-center">
+                      <h3 className="text-white font-serif font-semibold text-15 lg:text-18">
+                        {data.name}
+                      </h3>
+                      <img
+                        src={data.technology.icon}
+                        alt={`Projeto ${data.technology.name}`}
+                        width="auto"
+                        height="auto"
+                        className="relative -z-10 object-cover w-22"
+                      />
                     </div>
-                  ))}
-            </>
-          )}
+                  </>
+                </Link>
+              </div>
+            ))}
         </article>
       </div>
     </>
