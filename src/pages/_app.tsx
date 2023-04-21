@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Libre_Baskerville, Poppins } from '@next/font/google'
+import { Libre_Baskerville, Poppins } from "next/font/google"
 
 const poppins = Poppins({
   subsets: ['latin'],
