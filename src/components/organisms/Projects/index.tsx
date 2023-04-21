@@ -6,7 +6,7 @@ import { IProjectProps } from './type'
 import { useQuery } from '@tanstack/react-query'
 
 const getProject = async (): Promise<IProjectProps[]> => {
-  const response = await fetch(`/api/projects/devjobs`)
+  const response = await fetch(`${process.env.API_URL}/projescts`)
   const data = await response.json()
   return data
 }
