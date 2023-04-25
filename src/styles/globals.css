@@ -4,26 +4,27 @@
 
 @layer base {
   h1 {
-      @apply font-sans  text-38 sm:text-45 md:text-55
+    @apply font-sans  text-38 sm:text-45 md:text-55;
   }
 
   h2 {
-      @apply font-sans font-semibold text-31 sm:text-38 md:text-45
+    @apply font-sans font-semibold text-31 sm:text-38 md:text-45;
   }
 
-  h3 { 
-      @apply font-sans font-semibold text-26 sm:text-31
+  h3 {
+    @apply font-sans font-semibold text-26 sm:text-31;
   }
 
-  p, label {
-      @apply font-serif text-15 sm:text-18
+  p,
+  label {
+    @apply font-serif text-15 sm:text-18;
   }
 
   img {
-      @apply max-w-full h-auto;
+    @apply max-w-full h-auto;
   }
-  a{
-      @apply text-15
+  a {
+    @apply text-15;
   }
 }
 
@@ -31,73 +32,80 @@
   .line {
     @apply w-full bg-white h-2 opacity-50 rounded relative transition transform;
   }
-  .line.active:nth-child(1){
-    @apply opacity-100 transition transform ease-in rotate-45 duration-300 top-4/3 delay-150
+  .line.active:nth-child(1) {
+    @apply opacity-100 transition transform ease-in rotate-45 duration-300 top-4/3 delay-150;
   }
-  .line.active:nth-child(2){
-    @apply hidden transition ease-in duration-300
+  .line.active:nth-child(2) {
+    @apply hidden transition ease-in duration-300;
   }
-  .line.active:nth-child(3){
-     @apply  h-2 opacity-100 transition transform ease-in duration-300 -rotate-45 -top-4/3	delay-150
+  .line.active:nth-child(3) {
+    @apply h-2 opacity-100 transition transform ease-in duration-300 -rotate-45 -top-4/3	delay-150;
   }
-  .nav{
-    @apply flex bg-black items-center flex-col md:flex-row transition transform ease-in w-full
+  .nav {
+    @apply flex sm:justify-between bg-black items-center flex-col md:flex-row transition transform ease-in w-full;
   }
-  .link-outline-black{
+  .link-outline-black {
     @apply relative  font-sans font-bold inline-block capitalize text-18 
-      after:content-[""] after:mt-0 after:absolute after:bottom-0 after:bg-yellow after:w-full after:h-2 after:right-0 after:z-40
+      after:content-[""] after:mt-0 after:absolute after:bottom-0 after:bg-yellow after:w-full after:h-2 after:right-0 after:z-40;
   }
-  .icon-dev{
-     @apply w-[100px] h-[100px] m-auto !important
+  .icon-dev {
+    @apply w-[100px] h-[100px] m-auto !important;
   }
-  .input-subject{
-    @apply bg-gray-800 py-4 text-gray-200 border-none w-full h-45 rounded-sm px-13 font-sans text-15 sm:text-18
+  .input-subject {
+    @apply bg-gray-800 py-4 text-gray-200 border-none w-full h-45 rounded-sm px-13 font-sans text-15 sm:text-18;
   }
-  .input-subject-textarea{
-    @apply bg-gray-800 py-4 text-gray-200 border-none w-full h-[140px]  rounded-sm px-13 font-sans text-15 sm:text-18
+  .input-subject-textarea {
+    @apply bg-gray-800 py-4 text-gray-200 border-none w-full h-[140px]  rounded-sm px-13 font-sans text-15 sm:text-18;
   }
-  .btn-contacts{
-    @apply bg-yellow w-full h-45 rounded-sm font-sans uppercase transition-opacity hover:opacity-80
+  .btn-contacts {
+    @apply bg-yellow w-full h-45 rounded-sm font-sans uppercase transition-opacity hover:opacity-80;
   }
   .text-error {
-    @apply  text-red-500 font-serif border-none;
+    @apply text-red-500 font-serif border-none;
   }
-} 
+  .btn-modal {
+    @apply bg-yellow px-18 py-10 h-45 rounded-sm font-sans text-15 sm:text-18;
+  }
+}
 @layer utilities {
-  .animateSquare{
+  .animateSquare {
     animation: animate 5s linear infinite;
   }
-  @keyframes animate{
-      0%{
-          transform: scale(0) translateY(0) rotate(0deg); opacity: 0;
-      }
-      10%{
-          opacity: 1;
-      }
-      100%{
-          transform: scale(1) translateY(700%) rotate(360deg);
-      }
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1) translateY(700%) rotate(360deg);
+    }
   }
-  .square{
+  .square {
     height: 100vh;
     background-position-y: 90vh;
     background-position-x: unset;
   }
-  .block-project{
+  .block-project {
     background: black;
     transition: 0.3s;
-    
   }
-  @media(min-width:768px){
-    .block-project:hover{
-    transform: scale(1.2);
-    position: relative;
-    z-index: 999;
+  @media (min-width: 768px) {
+    .block-project:hover {
+      transform: scale(1.2);
+      position: relative;
+      z-index: 999;
+    }
   }
-  }
-  
-  .block-project-img{
+
+  .block-project-img {
     opacity: 0.4;
   }
-  
+
+  .grecaptcha-badge {
+    visibility: hidden;
+  }
 }
+

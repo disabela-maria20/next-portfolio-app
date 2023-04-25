@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Logo, Burger, Nav } from '../../atoms'
 
 const Menu = (): JSX.Element => {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(true)
 
   return (
     <header className="h-79">

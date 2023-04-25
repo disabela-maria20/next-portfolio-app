@@ -17,6 +17,7 @@ const libre = Libre_Baskerville({
 })
 export default function App({ Component, pageProps }: AppProps) {
   return (<div className={`${poppins.variable} ${libre.variable}`}>
-  <Component {...pageProps} />
-</div>)
+    <Component {...pageProps} />
+
+  </div>)
 }
