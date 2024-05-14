@@ -2,16 +2,18 @@ import { THome } from '@/components/templates'
 import { NextSeo } from 'next-seo'
 import React from 'react'
 
+
 const Index = () => {
   return (<>
     <NextSeo
-      title="Desenvolvedora Front-end React.js, Next.js & Typescript | Isabela M. Ribeiro"
-      description="Conheça a desenvolvedora front-end especializada em programação reativa com React.js e Next.js. Com experiência em SOLID, Mobile First e Atomic Design, já entregou produtos de alta qualidade no mercado."
+      nofollow={true}
+      title="Portfólio | Isabela M. Ribeiro - Desenvolvedora Front-End"
+      description="Olá! Sou uma profissional de front-end com formação em Análise e Desenvolvimento de Sistemas e 2 anos de experiência na área. Minha expertise está na programação reativa do React.js & Next.js, onde sempre busco utilizar os conceitos de SOLID, Mobile First, UX&UI e outros para melhorar a performance das aplicações e a experiência do usuário"
       canonical="https://isabelamribeiro.com.br/"
       openGraph={{
         url: 'https://isabelamribeiro.com.br/',
-        title: 'Desenvolvedora Front-end React.js, Next.js & Typescript | Isabela M. Ribeiro',
-        description: 'Conheça a desenvolvedora front-end especializada em programação reativa com React.js e Next.js. Com experiência em SOLID, Mobile First e Atomic Design, já entregou produtos de alta qualidade no mercado.',
+        title: 'Portfólio | Isabela M. Ribeiro - Desenvolvedora Front-End',
+        description: 'Olá! Sou uma profissional de front-end com formação em Análise e Desenvolvimento de Sistemas e 2 anos de experiência na área. Minha expertise está na programação reativa do React.js & Next.js, onde sempre busco utilizar os conceitos de SOLID, Mobile First, UX&UI e outros para melhorar a performance das aplicações e a experiência do usuário',
         images: [
           {
             url: 'https://isabelamribeiro.com.br/img/openGraph-seo.webp',
@@ -28,6 +30,7 @@ const Index = () => {
         ],
         site_name: 'Seu Site'
       }}
+
     />
     <THome />
   </>)

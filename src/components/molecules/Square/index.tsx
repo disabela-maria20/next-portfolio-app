@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { Fade } from "react-awesome-reveal";
 
 const Square = (): JSX.Element => {
   const block = useRef<HTMLDivElement>(null);
@@ -66,14 +65,12 @@ const Square = (): JSX.Element => {
 
   return (
     <section className="square relative overflow-hidden flex flex-col items-center justify-center bg-waves bg-no-repeat bg-cover" ref={block}>
-      <Fade direction='up' duration={1200} triggerOnce={true}>
-        <div className="h-100 mb-136">
-          <h1 className="relative text-white font-serif text-center mb-15 leading-title after:content-[''] after:mt-15 after:absolute after:-bottom-8 after:bg-yellow after:w-185 after:h-2 after:left-0 after:right-0 after:m-auto after:z-40">
-            Desenvolvedora<br /> Front-end
-          </h1>
-          <span className="text-white font-serif block text-center text-18">React.js, Next.js &amp; Typescript </span>
-        </div>
-      </Fade>
+      <div className="h-100 mb-136">
+        <h1 className="relative text-white font-serif text-center mb-15 leading-title after:content-[''] after:mt-15 after:absolute after:-bottom-8 after:bg-yellow after:w-185 after:h-2 after:left-0 after:right-0 after:m-auto after:z-40">
+          Desenvolvedora<br /> Front-end
+        </h1>
+        <span className="text-white font-serif block text-center text-18">React.js, Next.js &amp; Typescript </span>
+      </div>
     </section>
   );
 };

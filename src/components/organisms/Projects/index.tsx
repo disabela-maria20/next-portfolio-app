@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react'
-import Link from 'next/link'
 import { Title } from '../../atoms'
 import projescts from '../../../../utils/json/projescts.json'
-import { Slide, Zoom } from 'react-awesome-reveal'
 
 const Projects: React.FC = (): JSX.Element => {
   const [select, setSelect] = useState<string>('professional')
@@ -11,7 +9,7 @@ const Projects: React.FC = (): JSX.Element => {
   return (
     <>
       <div className="container m-auto px-15" id="trabalhos">
-        <Slide direction='up' duration={500} triggerOnce={true}>
+        <>
           <div className="flex flex-col items-center md:justify-between md:flex-row mb-26 md:mt-66 lg:mt-136">
             <Title>Trabalhos</Title>
             <select
@@ -23,15 +21,14 @@ const Projects: React.FC = (): JSX.Element => {
               <option value="study">Estudo</option>
             </select>
           </div>
-        </Slide>
+        </>
 
         <article className="grid grid-cols-1 grid-rows-6 md:grid-rows-none sm:grid-cols-2 lg:grid-cols-3 gap-26 md:gap-26 ">
           {projescts
             .sort((a, b) => a.id - b.id)
             .filter((e) => e.type === select)
             .map((data) => (
-              <Zoom key={data.id} direction='up' duration={data.id * 100 + 50} triggerOnce={true}>
-                <div className="relative z-20 block-project  h-full object-cover">
+                <div className="relative z-20 block-project  h-full object-cover" key={data.id}> 
                   <a
                     href={`${data.link}`}
                     rel="noreferrer nofollow noopener"
@@ -43,7 +40,7 @@ const Projects: React.FC = (): JSX.Element => {
                         alt={`Projeto ${data.name}`}
                         width="452"
                         height="265"
-                        className="block-project-img relative -z-10 h-full object-cover"
+                        className="block-project-img relative h-full object-cover"
                       />
                       <div className="absolute top-0 h-full w-full flex justify-center flex-col items-center">
                         <h3 className="text-white font-serif font-semibold text-15 lg:text-18">
@@ -52,16 +49,14 @@ const Projects: React.FC = (): JSX.Element => {
                         <img
                           src={data.technology.icon}
                           alt={`Projeto ${data.technology.name}`}
-                          width="auto"
-                          height="auto"
+                          width="22"
+                          height="22"
                           className="relative -z-10 object-cover w-22"
                         />
                       </div>
                     </>
                   </a>
                 </div>
-              </Zoom>
-
             ))}
         </article>
       </div>

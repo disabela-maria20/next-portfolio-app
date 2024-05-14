@@ -9,7 +9,6 @@ import { useState } from "react";
 import { BeatLoader } from "react-spinners";
 import Modal from "../Modal";
 import ReCAPTCHA from "react-google-recaptcha"
-import { Zoom } from 'react-awesome-reveal';
 
 const Contact = (): JSX.Element => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -50,7 +49,7 @@ const Contact = (): JSX.Element => {
   return (
     <>
       <Modal modal={!modal} setModal={setModal} />
-      <Zoom direction='up' duration={1200} triggerOnce={true} cascade>
+      <>
         <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 sm:grid-cols-2 gap-26 pt-26 ">
           <label htmlFor="nome" className="col-span-2 md:col-span-1">
             <span className="hidden">Nome</span>
@@ -112,7 +111,7 @@ const Contact = (): JSX.Element => {
             </Button>
           </div>
         </form>
-      </Zoom>
+      </>
 
     </>
 

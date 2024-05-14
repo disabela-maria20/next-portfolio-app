@@ -1,6 +1,5 @@
 import React from 'react'
 import { Html5Original, Css3OriginalWordmark, JavascriptOriginal, TypescriptPlain, ReactOriginal, NextjsOriginal, TailwindcssPlain, SassOriginal, BootstrapOriginal, JestPlain, ReduxOriginal, MicrosoftsqlserverPlain } from 'devicons-react';
-import { Slide } from 'react-awesome-reveal';
 
 const icons = {
   Html5Original,
@@ -36,13 +35,10 @@ const SkillsItem = (): JSX.Element => {
   return (
     <section className='grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-31 sm:gap-55 py-31'>
       {skills.map(({ Icon, title, id }) => (
-        <Slide direction='up' duration={id * 100 + 50} triggerOnce={true} key={id}>
-          <div className='shadow-gray-100 shadow py-26 rounded-sm'>
-            <Icon className='icon-dev' />
-            <p className='text-center text-13 font-bold mt-6'>{title}</p>
-          </div>
-        </Slide>
-
+        <div className='shadow-gray-100 shadow py-26 rounded-sm' key={id}>
+          <Icon className='icon-dev' />
+          <p className='text-center text-13 font-bold mt-6'>{title}</p>
+        </div>
       ))}
     </section>
   )
