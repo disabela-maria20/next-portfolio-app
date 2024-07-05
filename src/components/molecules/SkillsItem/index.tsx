@@ -1,5 +1,5 @@
 import React from 'react'
-import { Html5Original, Css3OriginalWordmark, JavascriptOriginal, TypescriptPlain, ReactOriginal, NextjsOriginal, TailwindcssPlain, SassOriginal, BootstrapOriginal, JestPlain, ReduxOriginal, MicrosoftsqlserverPlain } from 'devicons-react';
+import { Html5Original, Css3OriginalWordmark, JavascriptOriginal, TypescriptPlain, ReactOriginal, NextjsOriginal, TailwindcssPlain, SassOriginal, BootstrapOriginal, JestPlain, ReduxOriginal, MicrosoftsqlserverPlain, LaravelPlain } from 'devicons-react';
 
 const icons = {
   Html5Original,
@@ -13,7 +13,8 @@ const icons = {
   BootstrapOriginal,
   JestPlain,
   ReduxOriginal,
-  MicrosoftsqlserverPlain
+  MicrosoftsqlserverPlain,
+  LaravelPlain
 };
 
 const skills = [
@@ -26,7 +27,7 @@ const skills = [
   { id: 7, Icon: icons.TailwindcssPlain, title: 'Tailwindcss' },
   { id: 8, Icon: icons.SassOriginal, title: 'Sass' },
   { id: 9, Icon: icons.BootstrapOriginal, title: 'Bootstrap' },
-  { id: 10, Icon: icons.JestPlain, title: 'Jest' },
+  { id: 10, Icon: icons.LaravelPlain, title: 'Laravel' },
   { id: 11, Icon: icons.ReduxOriginal, title: 'Redux' },
   { id: 12, Icon: icons.MicrosoftsqlserverPlain, title: 'SQL Server' }
 ];
