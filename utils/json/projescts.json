@@ -1,6 +1,17 @@
 [
   {
     "id": 0,
+    "img": "./img/vibezz.png",
+    "name": "Vibezz",
+    "link": "https://vibezz.com/",
+    "technology": {
+      "name": "Next",
+      "icon": "./img/next-js.png"
+    },
+    "type": "professional"
+  },
+  {
+    "id": 0,
     "img": "./img/diamondfilms.com.br.jpeg",
     "name": "Diamond Films",
     "link": "https://diamondfilms.com.br/",
@@ -33,7 +44,7 @@
     "type": "professional"
   },
   {
-    "id":3,
+    "id": 3,
     "img": "./img/apas-next.png",
     "name": "Apas Next",
     "link": "https://eventonsg.com.br/",
@@ -75,94 +86,6 @@
       "icon": "./img/next-js.png"
     },
     "type": "professional"
-  },
-  {
-    "id": 8,
-    "img": "./img/CompanyName.webp",
-    "name": "CompanyName",
-    "link": "https://html-company-consultoria-lp.vercel.app/",
-    "technology": {
-      "name": "HTML",
-      "icon": "./img/html.png"
-    },
-    "type": "study"
-  },
-  {
-    "id": 9,
-    "img": "./img/drograria-sp.webp",
-    "name": "Drograrias SP",
-    "link": "https://html-drogararia-sp-lp.vercel.app/",
-    "technology": {
-      "name": "react",
-      "icon": "./img/react.png"
-    },
-    "type": "study"
-  },
-  {
-    "id": 10,
-    "img": "./img/fealthyfood.webp",
-    "name": "Fealthy Food",
-    "link": "https://react-healthy-food-lp.vercel.app/",
-    "technology": {
-      "name": "react",
-      "icon": "./img/react.png"
-    },
-    "type": "study"
-  },
-  {
-    "id": 11,
-    "img": "./img/finans.webp",
-    "name": "Finans",
-    "link": "https://html-finans-lp.vercel.app/",
-    "technology": {
-      "name": "react",
-      "icon": "./img/html.png"
-    },
-    "type": "study"
-  },
-  {
-    "id": 12,
-    "img": "./img/parallax.webp",
-    "name": "Parallax",
-    "link": "https://html-paralax-lp.vercel.app/",
-    "technology": {
-      "name": "react",
-      "icon": "./img/html.png"
-    },
-    "type": "study"
-  },
-  {
-    "id": 13,
-    "img": "./img/sportify.webp",
-    "name": "Sportify",
-    "link": "https://html-spotify-lp.vercel.app/",
-    "technology": {
-      "name": "react",
-      "icon": "./img/html.png"
-    },
-    "type": "study"
-  },
-  {
-    "id": 14,
-    "img": "./img/adventures-blog.webp",
-    "name": "Adventures Blog",
-    "link": "",
-    "technology": {
-      "name": "Next",
-      "icon": "./img/next-js.png"
-    },
-    "type": "study"
-  },
-  {
-    "id": 15,
-    "img": "./img/tinyone.webp",
-    "name": "Tinyone",
-    "link": "https://tinyone-app.vercel.app/",
-    "technology": {
-      "name": "React",
-      "icon": "./img/react.png"
-    },
-    "type": "study"
   },
   {
     "id": 16,
