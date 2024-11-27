@@ -1,6 +1,17 @@
 [
   {
     "id": 0,
+    "img": "./img/via-apia.png",
+    "name": "Via Apia",
+    "link": "https://cestasviaapia.com.br/",
+    "technology": {
+      "name": "wordpress",
+      "icon": "./img/wordpress.png"
+    },
+    "type": "professional"
+  },
+  {
+    "id": 0,
     "img": "./img/vibezz.png",
     "name": "Vibezz",
     "link": "https://vibezz.com/",
@@ -11,7 +22,7 @@
     "type": "professional"
   },
   {
-    "id": 0,
+    "id": 1,
     "img": "./img/diamondfilms.com.br.jpeg",
     "name": "Diamond Films",
     "link": "https://diamondfilms.com.br/",

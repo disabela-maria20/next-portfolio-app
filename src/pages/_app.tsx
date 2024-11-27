@@ -2,8 +2,6 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from "next/router";
 import { Libre_Baskerville, Poppins } from "next/font/google"
-import { useEffect, useState } from 'react'
-import { BeatLoader } from 'react-spinners';
 import React from 'react';
 
 const poppins = Poppins({
