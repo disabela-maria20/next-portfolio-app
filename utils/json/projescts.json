@@ -1,6 +1,28 @@
 [
   {
     "id": 0,
+    "img": "./img/vida-plano.png",
+    "name": "Vida Plano",
+    "link": "https://vidaplano.com.br/",
+    "technology": {
+      "name": "Next",
+      "icon": "./img/next-js.png"
+    },
+    "type": "professional"
+  },
+  {
+    "id": 1,
+    "img": "./img/imax.png",
+    "name": "IMAX",
+    "link": "http://54.224.118.78/",
+    "technology": {
+      "name": "Next",
+      "icon": "./img/Laravel.png"
+    },
+    "type": "professional"
+  },
+  {
+    "id": 2,
     "img": "./img/via-apia.png",
     "name": "Via Apia",
     "link": "https://cestasviaapia.com.br/",
@@ -11,7 +33,7 @@
     "type": "professional"
   },
   {
-    "id": 0,
+    "id": 3,
     "img": "./img/vibezz.png",
     "name": "Vibezz",
     "link": "https://vibezz.com/",
@@ -22,7 +44,7 @@
     "type": "professional"
   },
   {
-    "id": 1,
+    "id": 4,
     "img": "./img/diamondfilms.com.br.jpeg",
     "name": "Diamond Films",
     "link": "https://diamondfilms.com.br/",
@@ -33,7 +55,7 @@
     "type": "professional"
   },
   {
-    "id": 1,
+    "id": 5,
     "img": "./img/www.cine3.com.br.jpeg",
     "name": "Cine 3",
     "link": "https://www.cine3.com.br/",
@@ -43,19 +65,9 @@
     },
     "type": "professional"
   },
+
   {
-    "id": 2,
-    "img": "./img/deadpool--deadpool-hub.netlify.app.jpeg",
-    "name": "deadpool",
-    "link": "https://deadpool--deadpool-hub.netlify.app/",
-    "technology": {
-      "name": "Next",
-      "icon": "./img/next-js.png"
-    },
-    "type": "professional"
-  },
-  {
-    "id": 3,
+    "id": 6,
     "img": "./img/apas-next.png",
     "name": "Apas Next",
     "link": "https://eventonsg.com.br/",
@@ -66,7 +78,7 @@
     "type": "professional"
   },
   {
-    "id": 4,
+    "id": 7,
     "img": "./img/amabank-2021-2022.webp",
     "name": "Amabank 2021",
     "link": "https://react-amabank-lp.vercel.app/",
@@ -76,19 +88,9 @@
     },
     "type": "professional"
   },
+
   {
-    "id": 6,
-    "img": "./img/experimentador.webp",
-    "name": "Experimentador",
-    "link": "https://www.experimentador.com.br/",
-    "technology": {
-      "name": "Next",
-      "icon": "./img/next-js.png"
-    },
-    "type": "professional"
-  },
-  {
-    "id": 7,
+    "id": 8,
     "img": "./img/partners-2021.webp",
     "name": "Partners 2021-2022",
     "link": "https://react-partners-lp.vercel.app/",
@@ -99,7 +101,7 @@
     "type": "professional"
   },
   {
-    "id": 16,
+    "id": 9,
     "img": "./img/Adventures-2021-2022.webp",
     "name": "Adventures 2021-2022",
     "link": "https://web.archive.org/web/20220329184116/https://adventures.inc/en/",
@@ -110,7 +112,7 @@
     "type": "professional"
   },
   {
-    "id": 17,
+    "id": 10,
     "img": "./img/experimentador-natal.webp",
     "name": "Experimentador Natal",
     "link": "https://www.experimentador.com.br/cases/pacorabanne-natal",
@@ -121,7 +123,7 @@
     "type": "professional"
   },
   {
-    "id": 18,
+    "id": 11,
     "img": "./img/experimentador-phantom.webp",
     "name": "Experimentador Phantom",
     "link": "https://next-experimentador-phantom-lp.vercel.app/pacorabanne",

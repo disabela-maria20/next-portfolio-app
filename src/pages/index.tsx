@@ -1,41 +1,51 @@
-import { THome } from '@/components/templates'
-import { NextSeo } from 'next-seo'
-import React from 'react'
+import { THome } from "@/components/templates"
+import { NextSeo } from "next-seo"
+import React from "react"
 
 const Index = () => {
-  return (<>
-    <NextSeo
-      nofollow={true}
-      title="Portfólio | Isabela M. Ribeiro - Desenvolvedora Front-End"
-      description="Olá! Sou uma profissional de front-end com formação em Análise e Desenvolvimento de Sistemas e 3 anos de experiência na área. Minha expertise está na programação reativa do React.js & Next.js, onde sempre busco utilizar os conceitos de SOLID, Mobile First, UX&UI e outros para melhorar a performance das aplicações e a experiência do usuário"
-      canonical="https://isabelamribeiro.com.br/"
-      themeColor='#000'
-      openGraph={{
-        url: 'https://isabelamribeiro.com.br/',
-        title: 'Portfólio | Isabela M. Ribeiro - Desenvolvedora Front-End',
-        description: 'Olá! Sou uma profissional de front-end com formação em Análise e Desenvolvimento de Sistemas e 3 anos de experiência na área. Minha expertise está na programação reativa do React.js & Next.js, onde sempre busco utilizar os conceitos de SOLID, Mobile First, UX&UI e outros para melhorar a performance das aplicações e a experiência do usuário',
-
-        images: [
+  return (
+    <>
+      <NextSeo
+        title="Isabela M. Ribeiro | Desenvolvedora Front-End React & Next.js"
+        description="Portfólio de Isabela M. Ribeiro, desenvolvedora front-end especializada em React, Next.js e TypeScript. Criação de interfaces modernas, performáticas e responsivas."
+        canonical="https://isabelamribeiro.com.br/"
+        noindex={false}
+        nofollow={false}
+        themeColor="#000"
+        openGraph={{
+          type: "website",
+          locale: "pt_BR",
+          url: "https://isabelamribeiro.com.br/",
+          title:
+            "Isabela M. Ribeiro | Desenvolvedora Front-End React & Next.js",
+          description:
+            "Conheça o portfólio de Isabela M. Ribeiro, desenvolvedora front-end com foco em React, Next.js, TypeScript, UX/UI e performance.",
+          images: [
+            {
+              url: "https://isabelamribeiro.com.br/img/openGraph-seo.webp",
+              width: 1200,
+              height: 630,
+              alt: "Portfólio de Isabela M. Ribeiro – Desenvolvedora Front-End React e Next.js",
+            },
+          ],
+          site_name: "Isabela M. Ribeiro",
+        }}
+        additionalMetaTags={[
           {
-            url: 'https://isabelamribeiro.com.br/img/openGraph-seo.webp',
-            width: 1200,
-            height: 630,
-            alt: 'Desenvolvedora Front-end React.js, Next.js & Typescript'
+            name: "keywords",
+            content:
+              "Desenvolvedora Front-End, React, Next.js, TypeScript, Portfólio Front-End, Desenvolvedor React Brasil, UX UI, JavaScript",
           },
           {
-            url: 'https://isabelamribeiro.com.br/img/img-link-seo.webp',
-            width: 800,
-            height: 600,
-            alt: 'Desenvolvedora Front-end React.js, Next.js & Typescript'
-          }
-        ],
-        site_name: 'Seu Site'
-      }}
+            name: "author",
+            content: "Isabela M. Ribeiro",
+          },
+        ]}
+      />
 
-    />
-    
-    <THome />
-  </>)
+      <THome />
+    </>
+  )
 }
 
 export default Index
