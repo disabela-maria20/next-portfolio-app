@@ -6,7 +6,7 @@ const nextConfig = {
     KEY_RECAPTCHA_PRIVATE: '6LdzXrUlAAAAAFWHr17M9DB3RzLIh5D3LRgphKmr'
   },
   distDir: 'build',
-  trailingSlash: true,
-  output: 'export',
+  // trailingSlash: true,
+  // output: 'export',
 };
 module.exports = nextConfig
